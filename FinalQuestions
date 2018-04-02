@@ -81,7 +81,7 @@ the following fields:
 
 	i. Table: Review, Column: Stars
 	
-	+------------+------------+------------+
++------------+------------+------------+
 | Min(stars) | Max(stars) | Avg(stars) |
 +------------+------------+------------+
 |          1 |          5 |     3.7082 |
@@ -244,11 +244,14 @@ SELECT id
 ,fans
 FROM user 
 ORDER BY fans DESC
-
-+------------------------+-----------+--------------+------+
 SELECT Count(*)
 FROM review
-WHERE text like '%love%'| id                     | name      | review_count | fans |
+WHERE text like '%love%'
+
+
+
++------------------------+-----------+--------------+------+
+| id                     | name      | review_count | fans |
 +------------------------+-----------+--------------+------+
 | -9I98YbNQnLdAmcYfb324Q | Amy       |          609 |  503 |
 | -8EnCioUmDygAbsYZmTeRQ | Mimi      |          968 |  497 |
